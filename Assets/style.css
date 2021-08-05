@@ -1,0 +1,217 @@
+/* Universal Selector */
+* {
+  /* Sets the padding and margin for the base content on page */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Element Selectors */
+body {
+  /* Sets the background color of the website */
+  background-color: #226ab2;
+}
+
+a {
+  /* Sets the hyperlink colors and how the text should look */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  /* Sets the default font size on all paragraph tags */
+  font-size: 16px;
+}
+
+h1 {
+  /* Sets how the website logo will look as it is in the h1 tag*/
+  display: inline-block;
+  font-size: 48px;
+}
+
+h2 {
+  /* Sets how much spacing and what font size the h2 tag (firm services titles) will need */
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: whitesmoke;
+}
+
+h3 {
+  /* Sets how much spacing and what font size the h3 tag (firm benefits) will need  */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 36px;
+}
+
+h4 {
+  /* Sets the font size for the h4 tag */
+  font-size: 20px;
+}
+
+header {
+  /* Sets the header content inside spacing as well as the background color, font type and color */
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  background-color: firebrick;
+  color: #ffffff;
+}
+
+header nav {
+  /* Sets the navigation bar link's spacing and moves them to the right as well as changing the fornt type and size */
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+}
+
+nav ul li {
+  /* Sets how the navigation bar links will be placed next to each other */
+  display: inline-block;
+  margin-left: 25px;
+}
+
+aside {
+  /* Sets the firm benefits section position,font type, and background color */
+  margin-right: 20px;
+  padding: 6px;
+  clear: both;
+  float: left;
+  height: 100%;
+  background-color: #22b26a;
+}
+
+footer {
+  /* Sets the footer spacing, font type and how it will align */
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.image-of-me img {
+  height: 200px;
+  width: auto;
+}
+
+.about-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #22b26a;
+  /* background-color: #22B2B2; */
+  /* background-color:rgba(224, 220, 220, 0.493); */
+}
+
+.content {
+  /* Sets the section content positioning display and margin */
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.content p {
+  color: black;
+}
+/* take a look at padding and margin btom */
+.sample-work {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 500px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #22b26a;
+}
+
+.photos {
+display:grid;
+/* grid-template-columns: repeat (auto-fill, 1fr 1fr 1fr 1fr); */
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+grid-auto-rows: 100px;
+grid-auto-flow: row;
+}
+  
+ .photo1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+ }   
+ .photo1 img {
+  width: 924px;
+  height: 200px;
+ }
+ .photo2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+ }  
+ .photo2 img {
+  width: 462px;
+  height: 100px;
+ } 
+ .photo3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+ }  
+ .photo3 img {
+  width: 462px;
+  height: 100px;
+ } 
+  .photo4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+ }  
+ .photo4 img {
+  width: 462px;
+  height: 100px;
+ } 
+ .photo5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+ }  
+ .photo5 img {
+  width: 462px;
+  height: 100px;
+ }   
+
+/* ADD MEDIA QUERIES */
+@media only screen and (max-width: 799px) {
+  .photos {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: auto;
+}
+  footer {
+    display:inline-block;
+    padding:190px; 
+    margin-top: 10px;
+  }
+  h4 {
+  text-align: center;
+
+}
+  .contactme {
+    display: table-row
+  }
+
+}
+/* 
+@media all and (min-width: 992px) { 
+  .photos {
+    /* grid-template-areas:
+      'header header header'
+      'main main aside'
+      'footer footer footer'; */
+    /* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  } */ 
