@@ -22,31 +22,31 @@ a {
 
 p {
   /* Sets the default font size on all paragraph tags */
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
-  /* Sets how the website logo will look as it is in the h1 tag*/
+  /* Sets how my name will look*/
   display: inline-block;
   font-size: 48px;
 }
 
 h2 {
-  /* Sets how much spacing and what font size the h2 tag (firm services titles) will need */
+  /* Sets how much spacing and what font size the h2 tag (About Me) will need */
   margin-bottom: 20px;
   font-size: 36px;
-  color: whitesmoke;
+  color: #ffffff;
 }
 
 h3 {
-  /* Sets how much spacing and what font size the h3 tag (firm benefits) will need  */
+  /* Sets how much spacing and what font size the h3 tag (Sample Work) will need  */
   margin-bottom: 10px;
   text-align: center;
   font-size: 36px;
 }
 
 h4 {
-  /* Sets the font size for the h4 tag */
+  /* Sets the font size for the h4 tag (Contact Me)*/
   font-size: 24px;
   color: #ffffff;
 }
@@ -64,8 +64,8 @@ header nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-family: "Helvetica", sans-serif;
-  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
 }
 
 nav ul li {
@@ -74,6 +74,7 @@ nav ul li {
   margin-left: 25px;
 }
 
+/* Below is the hover effect */
 nav a.active,
 a:hover {
   transition: 0.5s;
@@ -81,7 +82,7 @@ a:hover {
 }
 
 aside {
-  /* Sets the firm benefits section position,font type, and background  */
+  /* Sets the picture of myself */
   margin-right: 40px;
   margin-left: 5px;
   padding: 6px;
@@ -95,18 +96,18 @@ footer {
   /* Sets the footer spacing, font type and how it will align */
   padding: 30px;
   clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   background-color: firebrick;
 }
 
+/* Size of my picutre */
 .image-of-me img {
   height: 200px;
   width: auto;
   padding: 10px;
 }
-
+/* Decided to forgo a backgroud element for styling reasons, this has my text of my about me */
 .about-me {
   margin-bottom: 20px;
   padding: 50px;
@@ -117,22 +118,19 @@ footer {
   /* background-color:rgba(224, 220, 220, 0.493); */
 }
 
+/* Sets the color of the Sample Work title  */
 .content {
-  /* Sets the section content positioning display and margin CONSIDER TAKING OFF WIDTH, potentially can add remove padding in about me and only add background to Pwpadding */
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap; */
-  /* width: 75%; */
-  color: white;
+  color: #ffffff;
 }
 
+/* This affects the text in the About Me  */
 .content p {
   color: black;
   background-color: #22b26a;
   margin-left: 150px;
 }
 
-/* take a look at padding and margin bottom, potential getting rid of the color here and about me */
+/* This controls the container that will have the application photos of the sample work */
 .sample-work {
   margin-bottom: 20px;
   padding: 50px;
@@ -143,6 +141,7 @@ footer {
 }
 
 .photos {
+  /* Originally, started with a grid but decided to switch to flex column to better control the images */
   /* display:grid; */
   /* grid-template-columns: repeat (auto-fill, 1fr 1fr 1fr 1fr); */
   /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
@@ -154,7 +153,7 @@ footer {
   align-content: stretch;
   align-items: center;
 }
-
+/* This gives the  photos a hover and opacity effect  */
 section img.photos,
 a:hover {
   background: firebrick;
@@ -162,15 +161,16 @@ a:hover {
   opacity: 0.8;
 }
 
+/* For reference below are my attemps at using a grid, which I stopped to improve the responsive design */
 /* .photo1 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
  }    */
+
+/* Each immage has a class to control its size , I have the first photo to be larger width to be bigger */
 .photo1 img {
-  /* width: 924px;
-  height: 200px; */
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -183,8 +183,6 @@ a:hover {
   grid-row-end: 4;
  }   */
 .photo2 img {
-  /* width: 462px;
-  height: 100px; */
   width: auto;
   height: auto;
   max-width: 100%;
@@ -227,10 +225,11 @@ a:hover {
   max-height: 50%;
 }
 
+/* This sets the color in my contact me footer */
 .contactme p {
   color: #ffffff;
 }
-/* ADD MEDIA QUERIES */
+/* MEDIA QUERIES  moslty to deal with the top and bottom parts of the page*/
 @media only screen and (max-width: 799px) {
   body {
     margin: 0;
@@ -251,22 +250,28 @@ a:hover {
 
   footer {
     display: inline-block;
-    padding: 100px;
-    margin: 10%;
+    padding: 90px;
+    margin: 20%;
   }
   h4 {
     text-align: center;
   }
+
+  .about-me {
+    padding: 40px;
+  }
+
   .contactme {
     display: table-row;
   }
 }
-/* 
-@media all and (min-width: 992px) { 
-  .photos {
-    /* grid-template-areas:
-      'header header header'
-      'main main aside'
-      'footer footer footer'; */
-/* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-  } */
+
+@media only screen and (max-width: 320px) {
+  h2 {
+    font: 20px;
+  }
+
+  .content p {
+    margin-left: 0%;
+  }
+}
