@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- this includes my CSS reset link to improve Responsive Design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edgar Ortega's Portfolio</title>
@@ -10,19 +11,18 @@
 
   <body>
     <header>
+      <!-- This area below is my navigation bar -->
       <h1>Edgar Ortega</h1>
       <nav>
         <ul>
           <li class="active">
-            <!-- this is where About me need to add class-->
+            <!-- this will link to my sections below, linked by the IDs-->
             <a href="#me">About Me</a>
           </li>
           <li>
-            <!-- this is where Work need to add class-->
             <a href="#work">Sample Work</a>
           </li>
           <li>
-            <!-- this is where Contact need to add class-->
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
@@ -30,7 +30,7 @@
     </header>
 
     <aside>
-      <!-- add an image, float left -->
+      <!-- This area is where my picture is -->
       <section class="image-of-me">
         <img src="Assets/Images/ME.jpg" alt="Edgar Ortega" />
       </section>
@@ -38,7 +38,7 @@
 
     <section class="content">
       <section id="me" class="about-me">
-        <!-- about me maybe add class up -->
+        <!-- This my about me section -->
         <h2>About Me</h2>
         <p>
           Hi, my name is Edgar. I'm from Chicago. I graduated from American
@@ -49,18 +49,15 @@
       </section>
 
       <section class="sample-work">
-        <!-- work -->
         <h3 id="work">Sample Work</h3>
-        <!-- here will be big image of one app, then other apps 
-        or place holder -->
-        <!-- will need an image (screenshot and link to site) -->
+        <!-- here is big image of one app, then other apps that links to the applications -->
         <section class="photos">
           <div class="photo1">
             <a href="https://edgaro93.github.io/horiseon/" target="_blank">
               <img alt="Horiseon project" src="./Assets/Images/Horiseon.png" />
             </a>
           </div>
-          <!-- rows of 2 (4total) , screenshot with a link? -->
+          <!-- this will be setup by the css as a column -->
           <div class="photo2">
             <a href="https://edgaro93.github.io/FanPage/" target="_blank">
               <img alt="Metallica Fanpage" src="./Assets/Images/fanpage.png" />
@@ -77,14 +74,8 @@
             </a>
           </div>
           <div class="photo5">
-            <a
-              href="https://scratch.mit.edu/projects/553227891"
-              target="_blank"
-            >
-              <img
-                alt="scratch cat game"
-                src="./Assets/Images/Scratch Cat Game.png"
-              />
+            <a href="https://scratch.mit.edu/projects/553227891" target="_blank" >
+              <img alt="scratch cat game" src="./Assets/Images/Scratch Cat Game.png"/>
             </a>
           </div>
         </section>
@@ -93,10 +84,12 @@
 
     <footer id="contact">
       <h4>Contact Me</h4>
-      <!-- Contact me -->
+      <!-- Contact me section with a link to my github and link to run an email to me-->
       <section class="contactme">
         <p>773-905-4065</p>
         <a href="mailto:edort93@gmail.com">Email Me </a>
+        <br/>
+        <!-- Added a break for style reasons -->
         <a href="https://github.com/EdgarO93" target="_blank"> Github </a>
       </section>
     </footer>
