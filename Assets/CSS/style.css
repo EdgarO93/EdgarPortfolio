@@ -4,21 +4,22 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+  font-family: sans-serif;
 }
 
 /* Element Selectors */
-body {
-  /* Sets the background color of the website */
-  background-color: #226ab2;
-  width: 100%;
-  height: 100%;
-}
 
-a {
+
   /* Sets the hyperlink colors and how the text should look */
+/* a {
+
   color: #ffffff;
   text-decoration: none;
-}
+} */
 
 p {
   /* Sets the default font size on all paragraph tags */
@@ -51,55 +52,10 @@ h4 {
   color: #ffffff;
 }
 
-header {
-  /* Sets the header content inside spacing as well as the background color, font type and color */
-  padding: 20px;
-  font-family: "Open Sans", sans-serif;
-  background-color: firebrick;
-  color: #ffffff;
-}
 
-header nav {
-  /* Sets the navigation bar link's spacing and moves them to the right as well as changing the fornt type and size */
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-}
 
-nav ul li {
-  /* Sets how the navigation bar links will be placed next to each other */
-  display: inline-block;
-  margin-left: 25px;
-}
 
-/* Below is the hover effect */
-nav a.active,
-a:hover {
-  transition: 0.5s;
-  color: #22b26a;
-}
 
-aside {
-  /* Sets the picture of myself */
-  margin-right: 40px;
-  margin-left: 5px;
-  padding: 6px;
-  clear: both;
-  float: left;
-  height: 100%;
-  background-color: #22b26a;
-}
-
-footer {
-  /* Sets the footer spacing, font type and how it will align */
-  padding: 30px;
-  clear: both;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  background-color: firebrick;
-}
 
 /* Size of my picutre */
 .image-of-me img {
@@ -112,7 +68,7 @@ footer {
   margin-bottom: 20px;
   padding: 50px;
   /* height: 300px; */
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   /* background-color: #22b26a; */
   /* background-color: #22B2B2; */
   /* background-color:rgba(224, 220, 220, 0.493); */
@@ -136,7 +92,7 @@ footer {
   padding: 50px;
   height: 100%;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   background-color: #22b26a;
 }
 
@@ -154,12 +110,12 @@ footer {
   align-items: center;
 }
 /* This gives the  photos a hover and opacity effect  */
-section img.photos,
-a:hover {
+/* section img.photos, */
+/* a:hover {
   background: firebrick;
   transition: 0.5s;
   opacity: 0.8;
-}
+} */
 
 /* For reference below are my attemps at using a grid, which I stopped to improve the responsive design */
 /* .photo1 {
@@ -231,10 +187,7 @@ a:hover {
 }
 /* MEDIA QUERIES  moslty to deal with the top and bottom parts of the page*/
 @media only screen and (max-width: 799px) {
-  body {
-    margin: 0;
-  }
-
+ 
   header {
     padding: 0;
   }
@@ -253,9 +206,7 @@ a:hover {
     padding: 90px;
     margin: 20%;
   }
-  h4 {
-    text-align: center;
-  }
+
 
   .about-me {
     padding: 40px;
@@ -274,4 +225,76 @@ a:hover {
   .content p {
     margin-left: 0%;
   }
+}
+
+.about-img{
+  max-width: 273px;
+}
+
+
+.btn-main{
+  background-color: #5796b9;
+  color:white;
+  transition: 300ms ease ;
+  width: 150px;
+
+}
+
+.btn-main:hover{
+  background-color: #5796b9;
+  color:white;
+  transform: translateY(-10px);
+}
+
+.btn-git{
+  background-color: #2d2d2d;
+  color:white;
+  border: 1px solid white;
+  transition: 300ms ease ;
+  width: 150px;
+}
+
+.btn-git:hover{
+  background-color: white;
+  color:#2d2d2d;
+  transform: translateY(-10px);
+}
+
+.footer-link{
+  color:white;
+  text-decoration: none;
+  width: 100%;
+  margin: 30px;
+  display: block;
+
+}
+
+@media (min-width:768px){
+  .footer-link{
+    color:white;
+    text-decoration: none;
+    width: 20%;
+    margin: 30px;
+    display:inline;
+  
+  }
+}
+
+.footer-link:hover{
+  color:#5796b9;
+  text-decoration: none;
+
+}
+
+.accent{
+  border-left: 10px solid white;
+  padding-left: 20px;
+}
+
+.lhcustom{
+  line-height: 30px;
+}
+
+.bg-dark{
+  background: #2d2d2d!important;
 }

@@ -1,101 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- this includes my CSS reset link to improve Responsive Design -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edgar Ortega's Portfolio</title>
-    <link rel="stylesheet" href="Assets/CSS/reset.css" />
-    <link rel="stylesheet" href="Assets/CSS/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <!-- This area below is my navigation bar -->
-      <h1>Edgar Ortega</h1>
-      <nav>
-        <ul>
-          <li class="active">
-            <!-- this will link to my sections below, linked by the IDs-->
-            <a href="#me">About Me</a>
+<head>
+  <!-- this includes my CSS reset link to improve Responsive Design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edgar Ortega's Portfolio</title>
+
+  <!-- BOOTSTRAP -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="Assets/CSS/reset.css" />
+  <link rel="stylesheet" href="Assets/CSS/style.css" />
+  <script src="https://kit.fontawesome.com/52d65b95b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Edgar Ortega</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#me">About Me</a>
           </li>
-          <li>
-            <a href="#work">Sample Work</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Sample Work</a>
           </li>
-          <li>
-            <a href="#contact">Contact Me</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
+  <section class="container-fluid bg-dark py-4">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <img class="img-fluid rounded about-img py-4" src="Assets/Images/headshot-edgar.jpeg" alt="Edgar Ortega" />
+      </div>
+      <div class="col-12 col-md-8 text-white d-flex align-items-center">
+        <div>
+          <h2 class="mb-4 accent">About Me</h2>
+          <p class= "lhcustom">
+            Hi, my name is Edgar. I'm from Chicago. I graduated from American
+            University. I hope to improve my long professional experience with new
+            skills in web development. I am currently enrolled in the Northwestern
+            Bootcamp. I am excited to build new projects!
+          </p>
+        </div>
+      </div>
 
-    <aside>
-      <!-- This area is where my picture is -->
-      <section class="image-of-me">
-        <img src="Assets/Images/headshot-edgar.jpeg" alt="Edgar Ortega" />
-      </section>
-    </aside>
+    </div>
+  </section>
 
-    <section class="content">
-      <section id="me" class="about-me">
-        <!-- This my about me section -->
-        <h2>About Me</h2>
-        <p>
-          Hi, my name is Edgar. I'm from Chicago. I graduated from American
-          University. I hope to improve my long professional experience with new
-          skills in web development. I am currently enrolled in the Northwestern
-          Bootcamp. I am excited to build new projects!
-        </p>
-      </section>
+  <section class="container-fluid bg-dark py-4">
+    <div class="row">
+      <div class="col-12 col-md-12 p-4">
+        <img class="img-fluid" alt="Swept Project " src="./Assets/Images/screenshot.png" />
+        <h4 class="my-4">
 
-      <section class="sample-work">
-        <h3 id="work">Sample Work</h3>
-        <!-- here is big image of one app, then other apps that links to the applications -->
-        <section class="photos">
-          <div class="photo1">
-            <a href="https://elliottdombrowski.github.io/NU-Project-1/" target="_blank">
-              <img alt="Swept Project " src="./Assets/Images/screenshot.png" />
-            </a>
-          </div>
-          <!-- this will be setup by the css as a column -->
-          <div class="photo2">
-            <a href="https://edgaro93.github.io/Weather-Dashboard/" target="_blank">
-              <img alt="Weather Dashboard" src="./Assets/Images/weather6paneldestop.png" />
-            </a>
-          </div>
-          <div class="photo3">
-            <a href="https://edgaro93.github.io/WorkDayScheduler/" target="_blank">
-              <img alt=" Work Day Scheduler" src="./Assets/Images/WDS copy.png" />
-            </a>
-          </div>
-          <div class="photo4">
-            <a href="https://edgaro93.github.io/CodeQuiz/" target="_blank">
-              <img alt="Code Quiz" src="./Assets/Images/edgaro93.github.io_CodeQuiz_ png.png" >
-            </a>
-          </div>
-          <!-- <div class="photo5">
-            <a href="https://scratch.mit.edu/projects/553227891" target="_blank" >
-              <img alt="scratch cat game" src="./Assets/Images/Scratch Cat Game.png"/>
-            </a> -->
-          </div>
-        </section>
-      </section>
+          Swept Project
+        </h4>
+        <a href="https://elliottdombrowski.github.io/NU-Project-1/" target="_blank" class="btn btn-main"> Launch </a>
+        <a href="https://github.com/elliottdombrowski/NU-Project-1/" target="_blank" class="btn btn-git"> <i class="fab fa-github mr-1"></i> Github
+        </a>
+      </div>
+      <div class="col-12 col-md-12 p-4">
+        <img class="img-fluid" alt="Swept Project " src="../Assets/Images/weather6paneldestop.png" />
+        <h4 class="my-4">
+
+          Weather Dashboard
+        </h4>
+        <a href="https://edgaro93.github.io/Weather-Dashboard/" target="_blank" class="btn btn-main"> Launch </a>
+        <a href="https://github.com/EdgarO93/Weather-Dashboard" target="_blank" class="btn btn-git"> View Github
+        </a>
+      </div>
+      <div class="col-12 col-md-12 p-4">
+        <img class="img-fluid" alt="Swept Project " src="./Assets/Images/WDS copy.png"  />
+        <h4 class="my-4">
+
+          Swept Project
+        </h4>
+        <a href="https://elliottdombrowski.github.io/NU-Project-1/" target="_blank" class="btn btn-main"> Launch </a>
+        <a href="https://github.com/elliottdombrowski/NU-Project-1/" target="_blank" class="btn btn-git"> View Github
+        </a>
+      </div>
+      <div class="col-12 col-md-12 p-4">
+        <img class="img-fluid" alt="Swept Project " src="./Assets/Images/edgaro93.github.io_CodeQuiz_ png.png" />
+        <h4 class="my-4">
+
+          Swept Project
+        </h4>
+        <a href="https://elliottdombrowski.github.io/NU-Project-1/" target="_blank" class="btn btn-main"> Launch </a>
+        <a href="https://github.com/elliottdombrowski/NU-Project-1/" target="_blank" class="btn btn-git"> View Github
+        </a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="container-fluid bg-dark p-4" id="contact">
+    <h4 class= "my-4 accent">Contact Me</h4>
+    <a class="footer-link" href="tel:7739054065"><i class="fas mr-2 fa-phone-alt"></i>Phone </a>
+    <a class="footer-link" href="mailto:edort93@gmail.com">Email Me </a>
+    <a class="footer-link" href="mailto:edort93@gmail.com">Github </a>
+    <a class="footer-link" href="mailto:edort93@gmail.com">LinkedIn </a>
+    <a class="footer-link" href="mailto:edort93@gmail.com">Resume</a>
+
+  </section>
+
+  
+
+  <!-- <footer id="contact">
+    <h4>Contact Me</h4>
+   
+    <section class="contactme">
+      <p>773-905-4065</p>
+      <a href="mailto:edort93@gmail.com">Email Me </a>
+      <br />
+    
+      <a href="https://github.com/EdgarO93" target="_blank"> Github </a>
+      <br />
+      <a href="https://www.linkedin.com/in/edgar-ortega" target="_blank">
+        Connect on LinkedIn</a>
+      <br />
+      <a href="../EdgarPortfolio/Assets/Edgar-Ortega-Resume-2021.pdf">Check out my Resume</a>
     </section>
+  </footer> --> 
 
-    <footer id="contact">
-      <h4>Contact Me</h4>
-      <!-- Contact me section with a link to my github and link to run an email to me-->
-      <section class="contactme">
-        <p>773-905-4065</p>
-        <a href="mailto:edort93@gmail.com">Email Me </a>
-        <br/>
-        <!-- Added a break for style reasons -->
-        <a href="https://github.com/EdgarO93" target="_blank"> Github </a>
-        <br/>
-        <a href ="https://www.linkedin.com/in/edgar-ortega" target = "_blank"> Connect on LinkedIn</a>
-        <br/>
-        <a href="../EdgarPortfolio/Assets/Edgar-Ortega-Resume-2021.pdf">Check out my Resume</a>
-      </section>
-    </footer>
-  </body>
+
+
+  
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script src="./Assets/JavaScript/script.js"></script>
+</body>
+
 </html>
