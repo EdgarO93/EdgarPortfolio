@@ -2,8 +2,21 @@
 Link: https://edgaro93.github.io/Portfolio/
 
 ## Description
-I wanted to try building a portfolio to practice my html and CSS skills along with trying out some new skills learned such as Responsive Design. At the moment, I do not have many applications to showcase so I used some previous work as proof of concept. I hope to build on this project to create better sites and a better future portfolio. I had some issues with layout because I had at first decided to use a grid to control my images, but decided to change to a flex box. I learned to not be afraid to change the code and to test frequently. I also found the inspect tool on Chrome, Firebox and Safari very useful. Lastly, I got more practice with using GitHub as I had to deploy most of my previous work.
+I updated my porfotlio with recent work I have done. I wanted to include some new design features I have learned such as Bootstrap framework. With a better understanding of mobile first design, I had a better time incorporating Reponsive Design. Personally, I am proud of the work I have been able to showcase especially the Swept project I collaboarated with. I decided to not have any JavaScript functions so that might be something I am thinking of adding. Lastly, I got more experience using GitHub as I added Licenses to past projects and mirrored my old porfolio repository.
 
 
 ## Screenshot
-![plot](Assets/Images/Portfolio.png)
+### Desktop view
+![plot](Assets/Images/desktop.png)
+
+### Mobile View
+![plot](Assets/Images/mobile.png)
+
+## License
+This project is licensed under the terms of the MIT license.
+
+
+## Acknowlegments
+~~~
+I would like to thank my tutor and TAs as well online resources such as W3 schools, MDN Web Docs, and Stack Overflow.
+~~~
