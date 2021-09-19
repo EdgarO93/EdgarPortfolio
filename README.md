@@ -15,7 +15,6 @@ I updated my porfotlio with recent work I have done. I wanted to include some ne
 ## License
 This project is licensed under the terms of the MIT license.
 
-
 ## Acknowlegments
 ~~~
 I would like to thank my tutor and TAs as well online resources such as W3 schools, MDN Web Docs, and Stack Overflow.
