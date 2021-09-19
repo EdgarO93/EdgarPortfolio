@@ -14,12 +14,6 @@ h1,h2,h3,h4,h5,h6,p,a{
 /* Element Selectors */
 
 
-  /* Sets the hyperlink colors and how the text should look */
-/* a {
-
-  color: #ffffff;
-  text-decoration: none;
-} */
 
 p {
   /* Sets the default font size on all paragraph tags */
@@ -52,134 +46,10 @@ h4 {
   color: #ffffff;
 }
 
-
-
-
-
-
-/* Size of my picutre */
-.image-of-me img {
-  height: 200px;
-  width: auto;
-  padding: 10px;
-}
-/* Decided to forgo a backgroud element for styling reasons, this has my text of my about me */
-.about-me {
-  margin-bottom: 20px;
-  padding: 50px;
-  /* height: 300px; */
-  /* font-family: "Open Sans", sans-serif; */
-  /* background-color: #22b26a; */
-  /* background-color: #22B2B2; */
-  /* background-color:rgba(224, 220, 220, 0.493); */
+#name {
+  font-size: 48px;
 }
 
-/* Sets the color of the Sample Work title  */
-.content {
-  color: #ffffff;
-}
-
-/* This affects the text in the About Me  */
-.content p {
-  color: black;
-  background-color: #22b26a;
-  margin-left: 150px;
-}
-
-/* This controls the container that will have the application photos of the sample work */
-.sample-work {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 100%;
-  width: 100%;
-  /* font-family: "Open Sans", sans-serif; */
-  background-color: #22b26a;
-}
-
-.photos {
-  /* Originally, started with a grid but decided to switch to flex column to better control the images */
-  /* display:grid; */
-  /* grid-template-columns: repeat (auto-fill, 1fr 1fr 1fr 1fr); */
-  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
-  /* grid-auto-rows: auto; */
-  /* grid-auto-flow: row; */
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  align-items: center;
-}
-/* This gives the  photos a hover and opacity effect  */
-/* section img.photos, */
-/* a:hover {
-  background: firebrick;
-  transition: 0.5s;
-  opacity: 0.8;
-} */
-
-/* For reference below are my attemps at using a grid, which I stopped to improve the responsive design */
-/* .photo1 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
- }    */
-
-/* Each immage has a class to control its size , I have the first photo to be larger width to be bigger */
-.photo1 img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 90%;
-}
-/* .photo2 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
- }   */
-.photo2 img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 90%;
-}
-/* .photo3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
- }   */
-.photo3 img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 90%;
-}
-/* .photo4 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
- }   */
-.photo4 img {
-  width: auto;
-  height: 50%;
-  max-width: 100%;
-  max-height: 50%;
-}
-/* .photo5 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 5;
- }   */
-.photo5 img {
-  width: auto;
-  height: 50%;
-  max-width: 100%;
-  max-height: 50%;
-}
 
 /* This sets the color in my contact me footer */
 .contactme p {
@@ -224,6 +94,10 @@ h4 {
 
   .content p {
     margin-left: 0%;
+  }
+
+  #name a{
+    font-size: 28px;
   }
 }
 
@@ -298,3 +172,4 @@ h4 {
 .bg-dark{
   background: #2d2d2d!important;
 }
+
