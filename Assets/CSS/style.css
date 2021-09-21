@@ -7,57 +7,60 @@
   font-family: sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
+/* Element Selectors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   font-family: sans-serif;
 }
 
-/* Element Selectors */
-
-
-
+/* Sets the default font size on all paragraph tags */
 p {
-  /* Sets the default font size on all paragraph tags */
   font-size: 18px;
 }
 
+/* Sets how my name will look*/
 h1 {
-  /* Sets how my name will look*/
   display: inline-block;
   font-size: 48px;
 }
 
+/* Sets how much spacing and what font size the h2 tag (About Me) will need */
 h2 {
-  /* Sets how much spacing and what font size the h2 tag (About Me) will need */
   margin-bottom: 20px;
   font-size: 36px;
   color: #ffffff;
 }
 
+/* Sets how much spacing and what font size the h3 tag (Sample Work) will need  */
 h3 {
-  /* Sets how much spacing and what font size the h3 tag (Sample Work) will need  */
   margin-bottom: 10px;
   text-align: center;
   font-size: 36px;
 }
-
+/* Sets the font size for the h4 tag (Contact Me)*/
 h4 {
-  /* Sets the font size for the h4 tag (Contact Me)*/
   font-size: 24px;
   color: #ffffff;
 }
 
+/* Sets the font size for my name */
 #name {
   font-size: 48px;
 }
-
 
 /* This sets the color in my contact me footer */
 .contactme p {
   color: #ffffff;
 }
-/* MEDIA QUERIES  moslty to deal with the top and bottom parts of the page*/
+
+/* MEDIA QUERIES */
 @media only screen and (max-width: 799px) {
- 
   header {
     padding: 0;
   }
@@ -77,7 +80,6 @@ h4 {
     margin: 20%;
   }
 
-
   .about-me {
     padding: 40px;
   }
@@ -96,80 +98,77 @@ h4 {
     margin-left: 0%;
   }
 
-  #name a{
+  #name a {
     font-size: 28px;
   }
 }
 
-.about-img{
+/* CSS for bootstrap classes */
+/* sets image of me size */
+.about-img {
   max-width: 273px;
 }
 
-
-.btn-main{
+/* gives effects to button as well as color and size */
+.btn-main {
   background-color: #5796b9;
-  color:white;
-  transition: 300ms ease ;
+  color: white;
+  transition: 300ms ease;
   width: 150px;
-
 }
-
-.btn-main:hover{
+/* button hover effect to go up and change color */
+.btn-main:hover {
   background-color: #5796b9;
-  color:white;
+  color: white;
   transform: translateY(-10px);
 }
-
-.btn-git{
+/* gives effects to button as well as color and size */
+.btn-git {
   background-color: #2d2d2d;
-  color:white;
+  color: white;
   border: 1px solid white;
-  transition: 300ms ease ;
+  transition: 300ms ease;
   width: 150px;
 }
-
-.btn-git:hover{
+/* button hover effect to go up and change color */
+.btn-git:hover {
   background-color: white;
-  color:#2d2d2d;
+  color: #2d2d2d;
   transform: translateY(-10px);
 }
-
-.footer-link{
-  color:white;
+/* changes color and spacing for the footer buttons */
+.footer-link {
+  color: white;
   text-decoration: none;
   width: 100%;
   margin: 30px;
   display: block;
-
 }
-
-@media (min-width:768px){
-  .footer-link{
-    color:white;
+/* MEDIA QUERY for footer */
+@media (min-width: 768px) {
+  .footer-link {
+    color: white;
     text-decoration: none;
     width: 20%;
     margin: 30px;
-    display:inline;
-  
+    display: inline;
   }
 }
-
-.footer-link:hover{
-  color:#5796b9;
+/* gives hover effects to the footer links */
+.footer-link:hover {
+  color: #5796b9;
   text-decoration: none;
-
 }
-
-.accent{
+/* accent shape for each section heading */
+.accent {
   border-left: 10px solid white;
   padding-left: 20px;
 }
-
-.lhcustom{
+/* line height for the about me section */
+.lhcustom {
   line-height: 30px;
 }
-
-.bg-dark{
-  background: #2d2d2d!important;
+/* makes sure button stays this color */
+.bg-dark {
+  background: #2d2d2d !important;
 }
-
