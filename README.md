@@ -12,6 +12,9 @@ I updated my porfotlio with recent work I have done. I wanted to include some ne
 ### Mobile View
 ![plot](Assets/Images/mobile.png)
 
+## Contact Info
+You can contact me at edort93@gmail.com
+
 ## License
 This project is licensed under the terms of the MIT license.
 
