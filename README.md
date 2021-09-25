@@ -18,7 +18,7 @@ You can contact me at edort93@gmail.com
 ## License
 This project is licensed under the terms of the MIT license.
 
-## Acknowlegments
+## Acknowledgments
 ~~~
 I would like to thank my tutor and TAs as well online resources such as W3 schools, MDN Web Docs, and Stack Overflow.
 ~~~
