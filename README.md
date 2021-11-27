@@ -1,7 +1,7 @@
 # Portfolio
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-Link: https://edgaro93.github.io/Portfolio/
+Link: https://edgaro93.github.io/EdgarPortfolio/
 
 
 ## Description
